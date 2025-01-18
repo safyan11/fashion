@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+
+
+
+.countdown{
+  display: flex;
+
+  gap: 20px;
+}
+
+
+  
+.countdown > div{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+ background-color: white;
+  align-items: center;
+  margin-top: 50px;
+  box-shadow: 1px 1px 15px rgba(0,0,0,0.25);
+  width: 80px;
+  height: 90px;
+  border-radius: 5px;
+}
+.number {
+  font-weight: 500;
+  font-size: 44px;
+  /* color: #CAA78C; */
+}
+
+div span:last-of-type{
+  font-size: 12px;
+}
+
+
+
+
+
+@media screen and (max-width:600px){
+  h1{
+    font-size: 40px;
+  }
+  
+  .countdown{
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    margin-top: 30px;
+  }
+  .countdown > div{
+    background-color: white;
+    width: 250px;
+    height: 60px;
+    margin: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  div span:last-of-type{
+  font-size: 24px;
+    text-transform: uppercase;
+}
+  .number {
+  font-size: 34px;
+  padding-bottom: 20px;
+}
+}
+
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  
+}
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+
+  .swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
